@@ -8,6 +8,9 @@
         tools:context=".MainActivity">
 
     <TextView
+            android:id="@+id/txt_teste"
+            android:autoLink="all"
+            android:linksClickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"
