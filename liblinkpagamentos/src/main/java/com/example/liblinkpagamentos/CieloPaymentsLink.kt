@@ -14,6 +14,7 @@ class CieloPaymentsLink(activity: Context, clientID: String, clientSecret: Strin
     private val context = activity
     private val clientID = clientID
     private val clientSecret = clientSecret
+    private val authenticateCredentials = AuthenticateCredentials()
 
     private fun AuthenticateCredentials() {
 
@@ -38,11 +39,9 @@ class CieloPaymentsLink(activity: Context, clientID: String, clientSecret: Strin
         shippingOriginZipCode: String? = null
     ): String? {
 
-        val authenticate = AuthenticateCredentials()
+        authenticateCredentials
 
         val linkPagamentosHttpClient = LinkPagamentosHttpClient()
-
-        val response = TransactionResponse()
 
         val saleType = when (type) {
             SaleType.ASSET -> "Asset"
@@ -82,7 +81,7 @@ class CieloPaymentsLink(activity: Context, clientID: String, clientSecret: Strin
         )
         linkPagamentosHttpClient.getLink(context, model)
 
-        val url = PreferencesHelper.get(context, "URL")
+        val url = TransactionResponse().url
 
         return url
     }

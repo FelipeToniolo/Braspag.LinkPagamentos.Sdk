@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             "q13XZ48haFg4EhAS2cjcoyX7OzRECYysY6T9TJLmKNM=")
 
         val url = paymentsLink.GenerateLink(
-            "Pedido", "5000", SaleType.DIGITAL, ShippingType.WITHOUTSHIPPING,
+            "Pedido", "4000", SaleType.DIGITAL, ShippingType.WITHOUTSHIPPING,
             "teste", "1000000000"
         )
 
