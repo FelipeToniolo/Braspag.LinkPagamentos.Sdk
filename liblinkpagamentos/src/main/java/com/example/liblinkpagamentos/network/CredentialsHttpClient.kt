@@ -3,19 +3,17 @@ package com.example.liblinkpagamentos.network
 import android.content.Context
 import com.example.liblinkpagamentos.extension.addBasicFormat
 import com.example.liblinkpagamentos.extension.toStatusCode
-import com.example.liblinkpagamentos.helper.PreferencesHelper
 import com.example.liblinkpagamentos.models.ClientResultModel
 import com.example.liblinkpagamentos.models.HttpStatusCode
 import com.example.liblinkpagamentos.models.auth.AuthClientModel
 import com.example.liblinkpagamentos.models.auth.OAuthApi
-import com.example.liblinkpagamentos.models.linkpagamentos.TransactionResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class CredentialsHttpClient {
 
-    fun getOAuthCredentials(context: Context, base64: String) {
+    fun getOAuthCredentials(context: Context, base64: String, callback: (String) -> Unit) {
 
         val authorizationFormat = base64.addBasicFormat()
 
@@ -33,17 +31,18 @@ class CredentialsHttpClient {
             }
 
             override fun onResponse(call: Call<AuthClientModel>, response: Response<AuthClientModel>) {
-                if (response.isSuccessful){
+                if (response.isSuccessful) {
                     ClientResultModel(
                         result = response.body(),
                         statusCode = response.code().toStatusCode()
                     )
 
-                    TransactionResponse().token = response.body()!!.accessToken
+                    callback.invoke(response.body()!!.accessToken)
+
+//                    TransactionResponse().token = response.body()!!.accessToken
 
 //                    PreferencesHelper.set(context, "TOKEN", response.body()!!.accessToken)
-                }
-                else
+                } else
                     ClientResultModel(
                         null,
                         response.code().toStatusCode(),

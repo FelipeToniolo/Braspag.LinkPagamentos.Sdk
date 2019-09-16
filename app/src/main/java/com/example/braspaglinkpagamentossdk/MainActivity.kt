@@ -2,8 +2,8 @@ package com.example.braspaglinkpagamentossdk
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.method.LinkMovementMethod
 import com.example.liblinkpagamentos.CieloPaymentsLink
+import com.example.liblinkpagamentos.CieloPaymentsLinkCallback
 import com.example.liblinkpagamentos.models.SaleType
 import com.example.liblinkpagamentos.models.ShippingType
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,12 +19,17 @@ class MainActivity : AppCompatActivity() {
         val paymentsLink = CieloPaymentsLink(this ,"df66638b-3ef4-421f-a18e-e20dea38d97d",
             "q13XZ48haFg4EhAS2cjcoyX7OzRECYysY6T9TJLmKNM=")
 
-        val url = paymentsLink.GenerateLink(
+        paymentsLink.generateLink(
             "Pedido", "4000", SaleType.DIGITAL, ShippingType.WITHOUTSHIPPING,
-            "teste", "1000000000"
-        )
+            "teste", "1000000000",
+             callback = object : CieloPaymentsLinkCallback {
+                override fun onGetLink(link: String) {
+                    txt_teste.text = link
+                }
 
-        txt_teste.movementMethod = LinkMovementMethod.getInstance()
-        txt_teste.text = url
+                override fun onError(error: String) {
+                    txt_teste.text = "Deu pau!"
+                }
+            })
     }
 }

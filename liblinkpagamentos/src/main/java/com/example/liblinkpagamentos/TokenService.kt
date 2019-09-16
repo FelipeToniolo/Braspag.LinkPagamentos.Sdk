@@ -5,7 +5,6 @@ import android.os.Build
 import com.example.liblinkpagamentos.helper.PreferencesHelper
 import com.example.liblinkpagamentos.models.auth.AuthClientModel
 import com.example.liblinkpagamentos.network.CredentialsHttpClient
-import java.time.LocalDateTime
 import java.util.*
 
 class TokenService(context: Context, clientId: String, clientSecret: String) {
@@ -17,7 +16,7 @@ class TokenService(context: Context, clientId: String, clientSecret: String) {
     private var token = PreferencesHelper.get(context, "TOKEN")
     private var expireIn = PreferencesHelper.get(context, "TOKENEXPIRE")
 
-    fun getToken() {
+    fun getToken(callback: (String) ->Unit) {
         val context = context
         val clientId_clientSecret = "$clientId:$clientSecret"
         val credentialsHttpClient = CredentialsHttpClient()
@@ -27,7 +26,7 @@ class TokenService(context: Context, clientId: String, clientSecret: String) {
         } else {
             TODO("VERSION.SDK_INT < O")
         }
-        credentialsHttpClient.getOAuthCredentials(context, base64format)
+        credentialsHttpClient.getOAuthCredentials(context, base64format, callback)
 
     }
 }
