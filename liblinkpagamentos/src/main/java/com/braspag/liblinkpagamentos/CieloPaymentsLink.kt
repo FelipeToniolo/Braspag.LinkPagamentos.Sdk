@@ -1,24 +1,25 @@
-package com.example.liblinkpagamentos
+package com.braspag.liblinkpagamentos
 
-import com.example.liblinkpagamentos.models.SaleType
-import com.example.liblinkpagamentos.models.ShippingType
-import com.example.liblinkpagamentos.models.linkpagamentos.Shipping
-import com.example.liblinkpagamentos.models.linkpagamentos.Transaction
-import com.example.liblinkpagamentos.network.LinkPagamentosHttpClient
+import com.braspag.liblinkpagamentos.models.RecurrentInterval
+import com.braspag.liblinkpagamentos.models.SaleType
+import com.braspag.liblinkpagamentos.models.ShippingType
+import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkParameters
+import com.braspag.liblinkpagamentos.models.paymentlink.Recurrent
+import com.braspag.liblinkpagamentos.models.paymentlink.Shipping
+import com.braspag.liblinkpagamentos.models.paymentlink.Transaction
+import com.braspag.liblinkpagamentos.network.LinkPagamentosHttpClient
+import com.braspag.liblinkpagamentos.service.TokenService
 
-class CieloPaymentsLink(clientID: String, clientSecret: String) {
-
-    private val clientID = clientID
-    private val clientSecret = clientSecret
+class CieloPaymentsLink(private val clientID: String, private val clientSecret: String) {
 
     fun generateLink(
         parameters: CieloPaymentsLinkParameters,
         callbacks: CieloPaymentsLinkCallbacks
     ) {
         val tokenCache = TokenService(clientID, clientSecret)
-        tokenCache.getToken(
-            onGetTokenCallback = {
-                generateLinkWithToken(parameters, it, callbacks)
+        tokenCache.getToken(callbacks,
+            onGetTokenCallback = { token->
+                generateLinkWithToken(parameters, token, callbacks)
             },
             onErrorCallback = callbacks::onError
         )
@@ -33,6 +34,7 @@ class CieloPaymentsLink(clientID: String, clientSecret: String) {
 
         val saleType = mapSaleType(parameters)
         val shippingType = mapShippingType(parameters)
+        val recurrentInterval = mapRecurrentInterval(parameters)
 
         val model = Transaction(
             type = saleType,
@@ -50,6 +52,10 @@ class CieloPaymentsLink(clientID: String, clientSecret: String) {
                 price = parameters.shippingPrice,
                 originZipCode = parameters.shippingOriginZipCode
             ),
+            recurrent = Recurrent(
+                interval = recurrentInterval,
+                endDate = parameters.recurrentEndDate
+            ),
             softDescriptor = parameters.softDescriptor
         )
 
@@ -60,12 +66,12 @@ class CieloPaymentsLink(clientID: String, clientSecret: String) {
     }
 
     private fun mapShippingType(parameters: CieloPaymentsLinkParameters): String {
-        return when {
-            parameters.shippingType == ShippingType.CORREIOS -> "Correios"
-            parameters.shippingType == ShippingType.FIXEDAMOUNT -> "FixedAmount"
-            parameters.shippingType == ShippingType.FREE -> "Free"
-            parameters.shippingType == ShippingType.WITHOUTSHIPPINGPICKUP -> "WithoutShippingPickUp"
-            else -> "WithoutShipping"
+        return when (parameters.shippingType){
+            ShippingType.CORREIOS -> "Correios"
+            ShippingType.FIXEDAMOUNT -> "FixedAmount"
+            ShippingType.FREE -> "Free"
+            ShippingType.WITHOUTSHIPPINGPICKUP -> "WithoutShippingPickUp"
+            ShippingType.WITHOUTSHIPPING -> "WithoutShipping"
         }
     }
 
@@ -75,7 +81,18 @@ class CieloPaymentsLink(clientID: String, clientSecret: String) {
             SaleType.DIGITAL -> "Digital"
             SaleType.SERVICE -> "Service"
             SaleType.PAYMENT -> "Payment"
-            else -> "Recurrent"
+            SaleType.RECURRENT-> "Recurrent"
+        }
+    }
+
+    private fun mapRecurrentInterval(parameters: CieloPaymentsLinkParameters): String? {
+        return when (parameters.recurrentInterval) {
+            RecurrentInterval.MONTHLY -> "Monthly"
+            RecurrentInterval.BIMONTHLY -> "Bimonthly"
+            RecurrentInterval.QUARTERLY -> "Quarterly"
+            RecurrentInterval.SEMIANNUAL -> "SemiAnnual"
+            RecurrentInterval.ANNUAL -> "Annual"
+            else -> null
         }
     }
 }

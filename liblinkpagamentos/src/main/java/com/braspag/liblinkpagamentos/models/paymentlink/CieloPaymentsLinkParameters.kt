@@ -1,7 +1,8 @@
-package com.example.liblinkpagamentos
+package com.braspag.liblinkpagamentos.models.paymentlink
 
-import com.example.liblinkpagamentos.models.SaleType
-import com.example.liblinkpagamentos.models.ShippingType
+import com.braspag.liblinkpagamentos.models.RecurrentInterval
+import com.braspag.liblinkpagamentos.models.SaleType
+import com.braspag.liblinkpagamentos.models.ShippingType
 
 data class CieloPaymentsLinkParameters @JvmOverloads constructor(
     val name: String,
@@ -13,6 +14,8 @@ data class CieloPaymentsLinkParameters @JvmOverloads constructor(
     val description: String? = null,
     val showDescription: String? = null,
     val expirationDate: String? = null,
+    val recurrentInterval: RecurrentInterval? = null,
+    val recurrentEndDate: String? = null,
     val sku: String? = null,
     val weight: Int? = null,
     val softDescriptor: String? = null,
