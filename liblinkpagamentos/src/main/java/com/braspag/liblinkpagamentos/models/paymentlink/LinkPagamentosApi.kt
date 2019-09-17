@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos.models.linkpagamentos
+package com.braspag.liblinkpagamentos.models.paymentlink
 
 import retrofit2.Call
 import retrofit2.http.Body

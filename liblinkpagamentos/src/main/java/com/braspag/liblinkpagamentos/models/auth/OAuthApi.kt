@@ -1,6 +1,5 @@
-package com.example.liblinkpagamentos.models.auth
+package com.braspag.liblinkpagamentos.models.auth
 
-import com.example.liblinkpagamentos.models.auth.AuthClientModel
 import retrofit2.Call
 import retrofit2.http.*
 

@@ -1,4 +1,4 @@
-package com.example.braspaglinkpagamentossdk
+package com.braspag.braspaglinkpagamentossdk
 
 import org.junit.Test
 

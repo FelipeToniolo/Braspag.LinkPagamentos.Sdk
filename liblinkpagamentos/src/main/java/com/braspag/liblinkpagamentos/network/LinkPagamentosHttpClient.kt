@@ -1,9 +1,8 @@
-package com.example.liblinkpagamentos.network
+package com.braspag.liblinkpagamentos.network
 
-import com.example.liblinkpagamentos.extension.addBearerFormat
-import com.example.liblinkpagamentos.models.HttpStatusCode
-import com.example.liblinkpagamentos.models.linkpagamentos.LinkPagamentosApi
-import com.example.liblinkpagamentos.models.linkpagamentos.Transaction
+import com.braspag.liblinkpagamentos.extension.addBearerFormat
+import com.braspag.liblinkpagamentos.models.paymentlink.LinkPagamentosApi
+import com.braspag.liblinkpagamentos.models.paymentlink.Transaction
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -17,7 +16,7 @@ class LinkPagamentosHttpClient {
         onErrorCallback: (String) -> Unit
     ) {
 
-        val authorizationFormat = token!!.addBearerFormat()
+        val authorizationFormat = token.addBearerFormat()
 
         val webClient =
             WebClient("https://meucheckoutsandbox.braspag.com.br/api/public/")

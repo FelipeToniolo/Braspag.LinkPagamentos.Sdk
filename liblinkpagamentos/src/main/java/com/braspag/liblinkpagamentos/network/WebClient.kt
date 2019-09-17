@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos.network
+package com.braspag.liblinkpagamentos.network
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

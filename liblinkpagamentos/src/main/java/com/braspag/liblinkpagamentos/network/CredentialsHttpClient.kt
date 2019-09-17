@@ -1,8 +1,8 @@
-package com.example.liblinkpagamentos.network
+package com.braspag.liblinkpagamentos.network
 
-import com.example.liblinkpagamentos.models.AccessToken
-import com.example.liblinkpagamentos.models.auth.AuthClientModel
-import com.example.liblinkpagamentos.models.auth.OAuthApi
+import com.braspag.liblinkpagamentos.models.auth.AccessToken
+import com.braspag.liblinkpagamentos.models.auth.AuthClientModel
+import com.braspag.liblinkpagamentos.models.auth.OAuthApi
 import okhttp3.Credentials
 import retrofit2.Call
 import retrofit2.Callback

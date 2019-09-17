@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos
+package com.braspag.liblinkpagamentos.models.paymentlink
 
 interface CieloPaymentsLinkCallbacks {
     fun onGetLink(link: String)

@@ -1,12 +1,11 @@
 package com.braspag.liblinkpagamentos
 
-import com.braspag.liblinkpagamentos.models.RecurrentInterval
-import com.braspag.liblinkpagamentos.models.SaleType
-import com.braspag.liblinkpagamentos.models.ShippingType
-import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkParameters
-import com.braspag.liblinkpagamentos.models.paymentlink.Recurrent
-import com.braspag.liblinkpagamentos.models.paymentlink.Shipping
-import com.braspag.liblinkpagamentos.models.paymentlink.Transaction
+import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.RecurrentInterval
+import com.braspag.liblinkpagamentos.models.paymentlink.SaleType
+import com.braspag.liblinkpagamentos.models.paymentlink.shipping.ShippingType
+import com.braspag.liblinkpagamentos.models.paymentlink.*
+import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.Recurrent
+import com.braspag.liblinkpagamentos.models.paymentlink.shipping.Shipping
 import com.braspag.liblinkpagamentos.network.LinkPagamentosHttpClient
 import com.braspag.liblinkpagamentos.service.TokenService
 

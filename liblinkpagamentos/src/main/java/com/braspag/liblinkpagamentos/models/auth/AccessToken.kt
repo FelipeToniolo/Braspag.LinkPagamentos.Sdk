@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos.models
+package com.braspag.liblinkpagamentos.models.auth
 
 import java.util.*
 

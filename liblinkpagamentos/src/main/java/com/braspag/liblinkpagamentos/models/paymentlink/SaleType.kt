@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos.models
+package com.braspag.liblinkpagamentos.models.paymentlink
 
 enum class SaleType {
     ASSET ,

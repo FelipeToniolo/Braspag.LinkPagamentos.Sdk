@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos;
+package com.braspag.liblinkpagamentos;
 
 import org.junit.Test;
 

@@ -1,5 +1,7 @@
-package com.example.liblinkpagamentos.models.linkpagamentos
+package com.braspag.liblinkpagamentos.models.paymentlink
 
+import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.Recurrent
+import com.braspag.liblinkpagamentos.models.paymentlink.shipping.Shipping
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 import java.util.ArrayList
@@ -49,6 +51,10 @@ open class Transaction(
     @SerializedName("shipping")
     @Expose
     var shipping: Shipping,
+
+    @SerializedName("recurrent")
+    @Expose
+    var recurrent: Recurrent,
 
     @SerializedName("expirationDate")
     @Expose

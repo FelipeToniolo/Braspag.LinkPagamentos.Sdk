@@ -1,4 +1,4 @@
-package com.braspag.liblinkpagamentos.models
+package com.braspag.liblinkpagamentos.models.paymentlink.recurrent
 
 enum class RecurrentInterval{
     MONTHLY,

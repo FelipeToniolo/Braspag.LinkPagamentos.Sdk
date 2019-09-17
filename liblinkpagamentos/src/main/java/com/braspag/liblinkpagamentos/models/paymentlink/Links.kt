@@ -1,4 +1,4 @@
-package com.example.liblinkpagamentos.models.linkpagamentos
+package com.braspag.liblinkpagamentos.models.paymentlink
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
