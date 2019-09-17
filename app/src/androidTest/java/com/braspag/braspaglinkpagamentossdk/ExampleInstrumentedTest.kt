@@ -1,4 +1,4 @@
-package com.example.braspaglinkpagamentossdk
+package com.braspag.braspaglinkpagamentossdk
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

@@ -1,17 +1,18 @@
-package com.example.braspaglinkpagamentossdk;
+package com.braspag.braspaglinkpagamentossdk;
 
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import com.example.liblinkpagamentos.CieloPaymentsLink;
-import com.example.liblinkpagamentos.CieloPaymentsLinkCallbacks;
-import com.example.liblinkpagamentos.CieloPaymentsLinkParameters;
-import com.example.liblinkpagamentos.models.SaleType;
-import com.example.liblinkpagamentos.models.ShippingType;
+import com.braspag.liblinkpagamentos.CieloPaymentsLink;
+import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkCallbacks;
+import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkParameters;
+import com.braspag.liblinkpagamentos.models.paymentlink.SaleType;
+import com.braspag.liblinkpagamentos.models.paymentlink.shipping.ShippingType;
 import org.jetbrains.annotations.NotNull;
 
 public class JavaMainActivity extends AppCompatActivity {
-    private TextView txt_teste;
+    private TextView txt1;
+    private TextView txt2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class JavaMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        txt_teste = this.findViewById(R.id.txt_teste);
+        txt1 = this.findViewById(R.id.txt1);
         CieloPaymentsLink paymentsLink = new CieloPaymentsLink("df66638b-3ef4-421f-a18e-e20dea38d97d", "q13XZ48haFg4EhAS2cjcoyX7OzRECYysY6T9TJLmKNM=");
 
         CieloPaymentsLinkParameters parameters = new CieloPaymentsLinkParameters(
@@ -30,12 +31,12 @@ public class JavaMainActivity extends AppCompatActivity {
             @Override
             public void onGetLink(@NotNull String link) {
                 String meuLink = link;
-                txt_teste.setText(meuLink);
+                txt1.setText(meuLink);
             }
 
             @Override
             public void onError(@NotNull String error) {
-                txt_teste.setText("Deu pau!");
+                txt1.setText("Deu pau!");
             }
         });
     }
