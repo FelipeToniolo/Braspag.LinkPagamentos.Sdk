@@ -1,11 +1,14 @@
 package com.braspag.liblinkpagamentos.service
 
-import com.braspag.liblinkpagamentos.Environment
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkCallbacks
 import com.braspag.liblinkpagamentos.models.auth.AccessToken
 import com.braspag.liblinkpagamentos.network.CredentialsHttpClient
 
-class TokenService(private val environment: Environment, private val clientId: String, private val clientSecret: String) {
+class TokenService(
+    private val environment: Environment,
+    private val clientId: String,
+    private val clientSecret: String
+) {
 
     fun getToken(
         callbacks: CieloPaymentsLinkCallbacks,

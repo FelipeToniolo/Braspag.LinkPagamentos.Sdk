@@ -75,7 +75,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f856f89d-d7b8-4d44-a62b-c00c31293732" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/Environment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -86,13 +85,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/CieloPaymentsLink.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/CieloPaymentsLink.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/Environment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/Environment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/OAuthApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/OAuthApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/LinkPagamentosApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/LinkPagamentosApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/SaleType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/SaleType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/Recurrent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/Recurrent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/RecurrentInterval.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/RecurrentInterval.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/CredentialsHttpClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/CredentialsHttpClient.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/LinkPagamentosHttpClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/LinkPagamentosHttpClient.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/TokenService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/TokenService.kt" afterDir="false" />
@@ -118,48 +120,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/CredentialsHttpClient.kt">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/AccessToken.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#47#448#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/WebClient.kt">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/extension/Extension.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding>
-                <element signature="e#47#190#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/CieloPaymentsLink.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding>
-                <element signature="e#39#601#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/TokenService.kt">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/LinkPagamentosApi.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
-                <element signature="e#47#306#0" expanded="true" />
+                <element signature="e#58#162#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/CieloPaymentsLinkParameters.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <element signature="e#58#219#0" expanded="true" />
               </folding>
@@ -177,52 +161,64 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="285">
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/LinkPagamentosHttpClient.kt">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/CieloPaymentsLinkCallbacks.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/RecurrentInterval.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/Recurrent.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#47#423#0" expanded="true" />
+                <element signature="e#68#159#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/build/generated/source/buildConfig/debug/com/braspag/liblinkpagamentos/BuildConfig.java">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/OAuthApi.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#51#96#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/Environment.kt">
+        <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/AuthClientModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/MainActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
-                <element signature="e#46#621#0" expanded="true" />
+                <element signature="e#51#142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -254,11 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/Links.kt" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/Transaction.kt" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/linkpagamentos/LinkPagamentosApi.kt" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/linkpagamentos/ResponseUrl.kt" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/linkpagamentos/Transaction.kt" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/linkpagamentos/Links.kt" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/models/linkpagamentos/Shipping.kt" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/example/liblinkpagamentos/PaymentsLink.kt" />
@@ -295,16 +286,21 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/SaleType.kt" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/build/generated/source/buildConfig/debug/com/braspag/liblinkpagamentos/BuildConfig.java" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/build.gradle" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/Enviroment.kt" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/TokenService.kt" />
-        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/CieloPaymentsLink.kt" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/CredentialsHttpClient.kt" />
         <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/LinkPagamentosHttpClient.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/CieloPaymentsLink.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/TokenService.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/Environment.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/SaleType.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/LinkPagamentosApi.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/RecurrentInterval.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/Recurrent.kt" />
+        <option value="$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/OAuthApi.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java" />
       </list>
     </option>
   </component>
@@ -358,50 +354,6 @@
             </path>
             <path>
               <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="liblinkpagamentos" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="liblinkpagamentos" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="liblinkpagamentos" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="liblinkpagamentos" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="liblinkpagamentos" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="liblinkpagamentos" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="liblinkpagamentos" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="liblinkpagamentos" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="paymentlink" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="liblinkpagamentos" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="liblinkpagamentos" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="liblinkpagamentos" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="liblinkpagamentos" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Braspag.LinkPagamentos.Sdk" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -424,11 +376,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.braspag.liblinkpagamentos.service" />
       <recent name="com.braspag.liblinkpagamentos.models.paymentlink" />
       <recent name="com.braspag.liblinkpagamentos.models.paymentlink.recurrent" />
       <recent name="com.braspag.liblinkpagamentos.models.paymentlink.shipping" />
       <recent name="com.braspag.liblinkpagamentos.models.auth" />
-      <recent name="com.braspag.liblinkpagamentos.models.linkpagamentos" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.braspag.liblinkpagamentos" />
@@ -829,50 +781,6 @@
       </provider>
       <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/Transaction.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="e#58#326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/SaleType.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/Links.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#58#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/LinkPagamentosApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#58#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/CieloPaymentsLinkCallbacks.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/shipping/ShippingType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -890,57 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/RecurrentInterval.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/Recurrent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#68#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/OAuthApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#51#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/AuthClientModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#51#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/AccessToken.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/extension/Extension.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-29/android.jar!/android/os/Environment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -955,27 +812,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/CieloPaymentsLinkParameters.kt">
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/build/generated/source/buildConfig/debug/com/braspag/liblinkpagamentos/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="e#58#219#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/Environment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="690">
+          <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+          <folding>
+            <element signature="e#46#670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/CieloPaymentsLink.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="283">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
             <element signature="e#39#601#0" expanded="true" />
           </folding>
@@ -984,35 +841,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/TokenService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="345">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
-            <element signature="e#47#306#0" expanded="true" />
+            <element signature="e#47#257#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/build/generated/source/buildConfig/debug/com/braspag/liblinkpagamentos/BuildConfig.java">
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/service/Environment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/CredentialsHttpClient.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#47#448#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/WebClient.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="390">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="e#47#190#0" expanded="true" />
           </folding>
@@ -1021,28 +868,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/LinkPagamentosHttpClient.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="393">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="e#47#423#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java">
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/network/CredentialsHttpClient.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="339">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#47#448#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/Transaction.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="390">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
-            <element signature="e#46#621#0" expanded="true" />
+            <element signature="e#58#326#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/SaleType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/Links.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#58#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/LinkPagamentosApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#58#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/CieloPaymentsLinkParameters.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#58#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/CieloPaymentsLinkCallbacks.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/RecurrentInterval.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/paymentlink/recurrent/Recurrent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#68#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/OAuthApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#51#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/AuthClientModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#51#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/models/auth/AccessToken.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liblinkpagamentos/src/main/java/com/braspag/liblinkpagamentos/extension/Extension.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/braspag/braspaglinkpagamentossdk/JavaMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
         </state>
       </provider>
     </entry>

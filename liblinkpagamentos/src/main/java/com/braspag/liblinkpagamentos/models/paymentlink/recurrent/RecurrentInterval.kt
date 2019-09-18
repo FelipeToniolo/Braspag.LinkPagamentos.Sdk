@@ -1,6 +1,6 @@
 package com.braspag.liblinkpagamentos.models.paymentlink.recurrent
 
-enum class RecurrentInterval{
+enum class RecurrentInterval {
     MONTHLY,
     BIMONTHLY,
     QUARTERLY,

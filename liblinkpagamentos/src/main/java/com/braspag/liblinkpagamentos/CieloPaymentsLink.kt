@@ -7,17 +7,22 @@ import com.braspag.liblinkpagamentos.models.paymentlink.*
 import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.Recurrent
 import com.braspag.liblinkpagamentos.models.paymentlink.shipping.Shipping
 import com.braspag.liblinkpagamentos.network.LinkPagamentosHttpClient
+import com.braspag.liblinkpagamentos.service.Environment
 import com.braspag.liblinkpagamentos.service.TokenService
 
-class CieloPaymentsLink(private val environment : Environment, private val clientID: String, private val clientSecret: String) {
+class CieloPaymentsLink(
+    private val environment: Environment,
+    private val clientID: String,
+    private val clientSecret: String
+) {
 
     fun generateLink(
         parameters: CieloPaymentsLinkParameters,
         callbacks: CieloPaymentsLinkCallbacks
     ) {
 
-        val tokenCache = TokenService(environment, clientID, clientSecret)
-        tokenCache.getToken(
+        val tokenService = TokenService(environment, clientID, clientSecret)
+        tokenService.getToken(
             callbacks,
             onGetTokenCallback = { token ->
                 generateLinkWithToken(parameters, token, callbacks)

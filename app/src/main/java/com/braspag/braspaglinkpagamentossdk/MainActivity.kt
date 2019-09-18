@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkParameters
 import com.braspag.liblinkpagamentos.CieloPaymentsLink
-import com.braspag.liblinkpagamentos.Environment
+import com.braspag.liblinkpagamentos.service.Environment
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkCallbacks
 import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.RecurrentInterval
 import com.braspag.liblinkpagamentos.models.paymentlink.SaleType

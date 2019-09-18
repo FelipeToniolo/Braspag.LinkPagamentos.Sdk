@@ -1,7 +1,7 @@
 package com.braspag.liblinkpagamentos.network
 
 import com.braspag.liblinkpagamentos.BuildConfig
-import com.braspag.liblinkpagamentos.Environment
+import com.braspag.liblinkpagamentos.service.Environment
 import com.braspag.liblinkpagamentos.models.auth.AccessToken
 import com.braspag.liblinkpagamentos.models.auth.AuthClientModel
 import com.braspag.liblinkpagamentos.models.auth.OAuthApi

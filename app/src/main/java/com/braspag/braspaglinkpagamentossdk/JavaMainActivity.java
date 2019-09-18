@@ -4,11 +4,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.braspag.liblinkpagamentos.CieloPaymentsLink;
-import com.braspag.liblinkpagamentos.Environment;
+import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.RecurrentInterval;
+import com.braspag.liblinkpagamentos.service.Environment;
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkCallbacks;
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkParameters;
 import com.braspag.liblinkpagamentos.models.paymentlink.SaleType;
-import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.RecurrentInterval;
 import com.braspag.liblinkpagamentos.models.paymentlink.shipping.ShippingType;
 import org.jetbrains.annotations.NotNull;
 

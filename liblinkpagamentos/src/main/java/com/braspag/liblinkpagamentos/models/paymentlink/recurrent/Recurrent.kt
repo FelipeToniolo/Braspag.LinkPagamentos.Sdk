@@ -3,11 +3,12 @@ package com.braspag.liblinkpagamentos.models.paymentlink.recurrent
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class Recurrent (
+class Recurrent(
     @SerializedName("interval")
     @Expose
     var interval: String?,
 
     @SerializedName("endDate")
     @Expose
-    var endDate: String?)
+    var endDate: String?
+)

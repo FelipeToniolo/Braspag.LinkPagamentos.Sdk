@@ -7,7 +7,9 @@ import retrofit2.http.POST
 
 interface LinkPagamentosApi {
 
-        @POST("v1/products/")
-        fun postTransaction(@Header("Authorization") authorization: String,
-                            @Body model: Transaction): Call<Transaction>
+    @POST("v1/products/")
+    fun postTransaction(
+        @Header("Authorization") authorization: String,
+        @Body model: Transaction
+    ): Call<Transaction>
 }
