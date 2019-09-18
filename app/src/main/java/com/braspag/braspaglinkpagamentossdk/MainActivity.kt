@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkParameters
 import com.braspag.liblinkpagamentos.CieloPaymentsLink
+import com.braspag.liblinkpagamentos.Environment
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkCallbacks
 import com.braspag.liblinkpagamentos.models.paymentlink.recurrent.RecurrentInterval
 import com.braspag.liblinkpagamentos.models.paymentlink.SaleType
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val paymentsLink = CieloPaymentsLink(
+            environment= Environment.SANDBOX,
             clientID = "df66638b-3ef4-421f-a18e-e20dea38d97d",
             clientSecret = "q13XZ48haFg4EhAS2cjcoyX7OzRECYysY6T9TJLmKNM="
         )
@@ -38,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onError(error: String) {
-                txt1.text = "Deu pau!"
+                txt1.text = "Deu pau"
             }
         })
 
@@ -49,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onError(error: String) {
-                txt2.text = "Deu pau!"
+                txt2.text = "Deu pau"
             }
         })
     }
