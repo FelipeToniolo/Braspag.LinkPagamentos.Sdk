@@ -24,6 +24,12 @@ android {
         }
     }
 
+    buildTypes.each {
+        it.buildConfigField('String', 'URL_OAUTH_SANDBOX', "\"https://meucheckoutsandbox.braspag.com.br/api/public/\"")
+        it.buildConfigField('String', 'URL_OAUTH_PRODUCTION', "\"https://cieloecommerce.cielo.com.br/api/public/v2/token/\"")
+        it.buildConfigField('String', 'URL_LINKPAGAMENTOS_SANDBOX', "\"https://meucheckoutsandbox.braspag.com.br/api/public/\"")
+        it.buildConfigField('String', 'URL_LINKPAGAMENTOS_PRODUCTION', "\"https://cieloecommerce.cielo.com.br/api/public/v1/products/\"")
+    }
 }
 
 dependencies {
