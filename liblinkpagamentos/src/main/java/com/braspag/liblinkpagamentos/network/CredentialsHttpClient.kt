@@ -1,5 +1,7 @@
 package com.braspag.liblinkpagamentos.network
 
+import com.braspag.liblinkpagamentos.BuildConfig
+import com.braspag.liblinkpagamentos.Environment
 import com.braspag.liblinkpagamentos.models.auth.AccessToken
 import com.braspag.liblinkpagamentos.models.auth.AuthClientModel
 import com.braspag.liblinkpagamentos.models.auth.OAuthApi
@@ -9,7 +11,11 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.util.*
 
-class CredentialsHttpClient(private val clientId: String, private val clientSecret: String) {
+class CredentialsHttpClient(
+    private val environment: Environment,
+    private val clientId: String,
+    private val clientSecret: String
+) {
 
     fun getOAuthCredentials(
         onSuccessCallback: (model: AccessToken) -> Unit,
@@ -17,7 +23,7 @@ class CredentialsHttpClient(private val clientId: String, private val clientSecr
     ) {
         val authorizationHeaderValue = Credentials.basic(clientId, clientSecret)
 
-        val webClient = WebClient("https://meucheckoutsandbox.braspag.com.br/api/public/")
+        val webClient = WebClient(useSandbox(environment))
         val call = webClient.createService(OAuthApi::class.java)
             .getTokenOAuth(authorizationHeaderValue, "client_credentials")
 
@@ -38,5 +44,12 @@ class CredentialsHttpClient(private val clientId: String, private val clientSecr
                 }
             }
         })
+    }
+
+    private fun useSandbox(environment: Environment): String {
+        return if (environment == Environment.SANDBOX)
+            BuildConfig.URL_OAUTH_SANDBOX
+        else
+            BuildConfig.URL_OAUTH_PRODUCTION
     }
 }

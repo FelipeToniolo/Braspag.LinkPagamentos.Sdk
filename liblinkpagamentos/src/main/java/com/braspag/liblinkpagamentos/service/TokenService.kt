@@ -1,19 +1,18 @@
 package com.braspag.liblinkpagamentos.service
 
+import com.braspag.liblinkpagamentos.Environment
 import com.braspag.liblinkpagamentos.models.paymentlink.CieloPaymentsLinkCallbacks
 import com.braspag.liblinkpagamentos.models.auth.AccessToken
 import com.braspag.liblinkpagamentos.network.CredentialsHttpClient
 
-class TokenService(clientId: String, clientSecret: String) {
-    private val clientId = clientId
-    private val clientSecret = clientSecret
+class TokenService(private val environment: Environment, private val clientId: String, private val clientSecret: String) {
 
     fun getToken(
         callbacks: CieloPaymentsLinkCallbacks,
         onGetTokenCallback: (String) -> Unit,
         onErrorCallback: (String) -> Unit
     ) {
-        val credentialsHttpClient = CredentialsHttpClient(clientId, clientSecret)
+        val credentialsHttpClient = CredentialsHttpClient(environment, clientId, clientSecret)
         credentialsHttpClient.getOAuthCredentials({ accessToken ->
             if (accessToken.isStillValid()) {
                 onGetTokenCallback.invoke(accessToken.token)
@@ -36,7 +35,7 @@ class TokenService(clientId: String, clientSecret: String) {
         onGetTokenCallback: (String) -> Unit,
         onErrorCallback: (String) -> Unit
     ) {
-        val credentialsHttpClient = CredentialsHttpClient(clientId, clientSecret)
+        val credentialsHttpClient = CredentialsHttpClient(environment, clientId, clientSecret)
         credentialsHttpClient.getOAuthCredentials({ accessToken: AccessToken ->
             onGetTokenCallback.invoke(accessToken.token)
         }, {

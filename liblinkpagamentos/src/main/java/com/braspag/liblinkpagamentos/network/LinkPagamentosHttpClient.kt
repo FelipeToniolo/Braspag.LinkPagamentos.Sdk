@@ -1,5 +1,7 @@
 package com.braspag.liblinkpagamentos.network
 
+import com.braspag.liblinkpagamentos.BuildConfig
+import com.braspag.liblinkpagamentos.Environment
 import com.braspag.liblinkpagamentos.extension.addBearerFormat
 import com.braspag.liblinkpagamentos.models.paymentlink.LinkPagamentosApi
 import com.braspag.liblinkpagamentos.models.paymentlink.Transaction
@@ -7,8 +9,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class LinkPagamentosHttpClient {
-
+class LinkPagamentosHttpClient(private val environment: Environment) {
 
     fun getLink(
         model: Transaction, token: String,
@@ -19,7 +20,7 @@ class LinkPagamentosHttpClient {
         val authorizationFormat = token.addBearerFormat()
 
         val webClient =
-            WebClient("https://meucheckoutsandbox.braspag.com.br/api/public/")
+            WebClient(useSandbox(environment))
         val call = webClient.createService(LinkPagamentosApi::class.java)
             .postTransaction(authorizationFormat, model)
 
@@ -38,5 +39,12 @@ class LinkPagamentosHttpClient {
                 }
             }
         })
+    }
+
+    private fun useSandbox(environment: Environment): String {
+        return if (environment == Environment.SANDBOX)
+            BuildConfig.URL_LINKPAGAMENTOS_SANDBOX
+        else
+            BuildConfig.URL_LINKPAGAMENTOS_PRODUCTION
     }
 }
